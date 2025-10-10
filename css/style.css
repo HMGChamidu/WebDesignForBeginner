@@ -1,4 +1,22 @@
+body {
+    font-size: 22px;
+
+}
+h1,h2,h3{
+    color: blue;
+}
 p{
     color: purple;
-    font-size: 64px;
+}
+p span{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+.gray{
+    color: gray;
+}
+
+#second {
+    font-style: italic;
 }
