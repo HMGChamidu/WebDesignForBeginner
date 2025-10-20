@@ -1,20 +1,29 @@
+@import url();
 body{
-    padding: 10%;
+    padding: 5% 10%;
     font-size: 2rem;
-    font-family: 'roboto' , sans-serif;
+    font-family: 'roboto', sans-serif;
 }
-a{
-    text-decoration: underline;
-    cursor: pointer;
+
+ol{
+    list-style-type: arabic;
+    padding: 0;
+}
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: outside;
     color: blue;
+    line-height: 1.6;
+    
 }
-a:visited{
-    color: purple;
-}
-a:hover,a:focus{
-   background: gold
-   /* color: red;*/
-}
-a:active{
+ul li:nth-child(even){
     color: red;
+}
+::marker{
+    color: red;
+    font-family: fantasy;
+    font-size: 1rem;
+    content: "only $5 >> ";
+
 }
