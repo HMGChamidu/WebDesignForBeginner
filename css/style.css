@@ -1,29 +1,50 @@
-@import url();
-body{
-    padding: 5% 10%;
-    font-size: 2rem;
-    font-family: 'roboto', sans-serif;
-}
-
-ol{
-    list-style-type: arabic;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+nav{
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 600px;
+    font-size: 3rem;
+    line-height: 7rem;
+}
+h2{
+    padding: 1rem;
+    background: gold;
+    border-radius: 2rem 2rem 0 0;
+
 }
 ul{
-    list-style-type: square;
-    text-align: center;
-    list-style-position: outside;
-    color: blue;
-    line-height: 1.6;
-    
-}
-ul li:nth-child(even){
-    color: red;
-}
-::marker{
-    color: red;
-    font-family: fantasy;
-    font-size: 1rem;
-    content: "only $5 >> ";
 
+    list-style-type: none;
+
+}
+li{
+    border-top: 1px solid #333;
+}
+
+li a{
+    display: block;
+}
+li a:hover,
+li a:focus{
+    background: #333;
+    color: whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+li:last-child a{
+    border-radius: 0 0 2rem 2rem;
 }
