@@ -6,32 +6,22 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
   min-height: 100vh;
-  padding :20px;
+
+  .container{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-auto-rows: minmax(150px, auto);
+    
+  }
 
 }
-.container{
- max-width: 800px;
- min-height: 400px;
- margin-inline: auto;
- border: 1px solid #000;
- display: flex;
- justify-content: space-evenly;
- gap: 1rem;
- align-items: center;
- flex-direction: row-reverse;
- flex-wrap: wrap;
-}
 .box{
-  min-width: 100px;
-  min-height: 100px;
   background-color: #000;
   color: #fff;
   font-size: 2rem;
   padding: 0.5rem;
-}
-.box:nth-child(odd){
-  
-  flex: 2 2 150px;
-  order: 1;
+
 }
